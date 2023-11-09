@@ -142,3 +142,42 @@ Lambda functions are essentially a concise way to define small functions.
 names = lambda fn, ln: fn.title() + " " + ln.title()
 result = names("   makabongwe", "      metuso")
 print(result)
+
+#Week 2 (Control Flow)
+
+Activity
+
+cars = {
+  1: 0 ,
+  2: 0,
+  3: 0
+}
+while True:
+  car_type = int(input("Enter car type (1 = luxury, 2 = commercial: "))
+  if car_type == 1:
+      print("Luxury")
+  elif car_type == 2:
+      print("Commercial")
+  else:
+    car_type == 0
+    break
+  cars[car_type] += 1
+for car_type, count in cars.items():
+  print(f"Number of {car_type} cars: {count}")
+
+
+#Week 3 (Defining functions)
+
+#Lists can be created in a number of ways:
+f = [] # An empty list
+fruits = ['apple', 'banana', 'mango']
+fruits.append(['kiwi', 'pear'])
+>>> fruits
+['apple', 'banana', 'mango', ['kiwi', 'pear']] #A nested list
+list = ['child', 1, 3.14] # A list with mixed data types
+
+
+The index operator ([])is used to retrieve an element from a list. Indexing begins at 0. 
+Any attempt to access indices outside of this range will trigger an IndexError. 
+Furthermore, the index must be an integer; using a float or other types will lead to a TypeError. 
+When dealing with nested lists, you access them using nested indexing.
