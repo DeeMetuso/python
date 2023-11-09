@@ -145,7 +145,27 @@ print(result)
 
 #Week 2 (Control Flow)
 
-Activity
+Activity 1:
+Using two for loops, write a program that produces the following output:
+>>>
+
+1 2 3
+
+4 5 6
+
+7 8 9
+
+>>> 
+
+for i in range(1, 10):
+    print(i, end=' ')
+    if i % 3 == 0:
+        print()
+
+Activity 2: 
+Input in a number representing a car type, until the number 0 is input. 
+There are three types of cars: 1 = luxury, 2 = commercial, 3 = sedan. 
+Count how many of each type there are and print out this total with a message stating what type of car it is.
 
 cars = {
   1: 0 ,
@@ -164,6 +184,56 @@ while True:
   cars[car_type] += 1
 for car_type, count in cars.items():
   print(f"Number of {car_type} cars: {count}")
+
+Activity 3: 
+Write a program that contains a while loop. Use a variable to count the number of iterations and print out this value each time. 
+After the fifth iteration, the loop should stop and exit. Use the break statement.
+
+count = 0
+while True:
+    count += 1
+    print(count)
+    if count == 5:
+        break
+
+# Day 2 (Functions)
+
+Functions are mainly used to avoid repetitive code and save memory. Instead of duplicating code, functions are created to encapsulate a specific operation. 
+Functions can accept zero or more inputs, referred to as parameters, and are called whenever that particular operation is needed. 
+This approach makes the code more efficient and easier to maintain by organizing it into reusable, modular pieces.
+
+# Random module
+Activity:
+Write a program that requests the user to input three numbers. These numbers must be passed to two functions:
+A function that calculates and prints the product of the numbers.
+A second function that calculates and returns the average of the numbers.
+The average returned by the function is then printed.
+
+# Function for calculating product of 3 numbers and average
+def numProd(n1, n2, n3):
+  return n1 * n2 * n3
+print("Enter 3 numbers: ")
+print("Enter 1st number:")
+n1 = int(input())
+print("Enter 2nd number:")
+n2 = int(input())
+print("Enter 3rd number:")
+n3 = int(input())
+print(f"The product of the number is: {numProd(n1, n2, n3)}")
+
+def numAve(n1, n2, n3):
+  return (n1 + n2 + n3) / 3
+print(f"The average of the number is: {numAve(n1, n2, n3)}")
+
+#Recursive functions
+
+Flags instruct the regex on how to operate when searching for patterns. 
+When you use the IGNORECASE flag, you're instructing the compiler to perform a match that doesn't distinguish between uppercase and lowercase letters. 
+This can lead to shorter regular expressions; for instance, [0-9a-zA-Z] can be simplified to [0-9a-z]. 
+You can use re.I instead of re.IGNORECASE, and it will achieve the same outcome.
+The VERBOSE flag enhances the readability of an expression by permitting the inclusion of comments and white spaces. 
+You'd typically opt for the verbose flag when crafting a lengthy and intricate regular expression that requires clarification. 
+The regex would interpret the expression as a standard one without any comments or spaces.
 
 
 #Week 3 (Defining functions)
