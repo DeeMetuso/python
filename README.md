@@ -246,6 +246,37 @@ fruits.append(['kiwi', 'pear'])
 ['apple', 'banana', 'mango', ['kiwi', 'pear']] #A nested list
 list = ['child', 1, 3.14] # A list with mixed data types
 
+#Regular Expressions
+
+Activity 1:
+Write a program that removes all numbers (except 5) that appear in a string. The string = JGDN8923487854t6fnjhasfu555335udvb
+
+import re
+string = "JGDN8923487854t6fnjhasfu555335udvb"
+updated_string = re.sub(r"[5]+", "", string)
+print(updated_string)
+
+Output: 
+JGDN892348784t6fnjhasfu33udvb #All the digits = 5 have been removed
+
+Activity 2: 
+Write a program that prompts a user to enter a cell phone number in a certain format: +2778-123-4567
+The number must start with "+27" (standard South-African number). A message must be printed indicating if the number is in the correct format.
+An error message must be printed if the wrong country code is entered or the number is in an incorrect format
+
+import re 
+print("Enter a cell number:")
+cell_num = input()
+
+cell_num_pattern = re.match(r"^\+27\d{2}[-]\d{3}[-]\d{4}$", cell_num)
+
+if cell_num_pattern:
+    print("Valid phone number")
+else:
+    print("Invalid phone number")
+
+
+
 
 The index operator ([])is used to retrieve an element from a list. Indexing begins at 0. 
 Any attempt to access indices outside of this range will trigger an IndexError. 
