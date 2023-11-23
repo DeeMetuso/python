@@ -7,12 +7,12 @@ Python jobs can be in fields like working with databases, network programming, o
 Companies are switching to open-source software like Python, making it even more valuable. 
 This course teaches you a lot in a short time and introduces you to a new way of writing code. So, if you're interested in tech careers, Python is a great place to start.
 
-#History 
+# History 
 Python is a programming language created in the late 1980s by Guido van Rossum in the Netherlands. It's designed to be simple and reliable, and it comes with a handy library for many tasks that programs need to do. 
 Python focuses on making it easy for programmers to write, read, and document their code. While some languages prioritize fast compilation, Python strikes a balance between speed and readability, making it easier for developers. 
 Python is implemented in C, which means it can work on various operating systems like UNIX, Linux, Windows, and more. It was influenced by other languages like ABC and Modula-3.
 
-#Comments in python
+# Comments in python
 Comments are used in Python just as other programming languages. 
 The purpose is the same; to add to the code useful descriptions on what is occurring for general documentation. 
 They start with the # character and extend to the end of a line. For example: # this is a comment 
@@ -40,12 +40,12 @@ Variables have the following rules associated with them:
 Variables are automatically assigned to the apppropriate data type. 
 For example: name = 'python' is automatically assigned to the string data type since it is in single quotes.
 
-#Casting
+# Casting
 Casting refers to changing the data type of a value. This is done when you want to use a value as a different type than it originally is. There are two ways to do this: implicit and explicit casting.
 Implicit casting happens when the computer changing a value's data type won't lose any information. For example, if you have a whole number (integer) and you need to use it as a decimal number (floating-point), the computer can do this automatically without any extra instructions.
 Explicit casting is when you need to give specific instructions to the computer. This is because the computer can't be sure about changing the data type, as it might lose some information. You write extra code to control how the value is converted from one type to another. For instance, if you want to turn a decimal number into a whole number, you need to provide detailed instructions to avoid losing the decimal part.
 
-#Consolidating Learning
+# Consolidating Learning
 First exercise (write a program that will take the sum of 2 numbers and subtract 3 from the result)
 suM = str('2 + 4 = 6')
 sub = str('6 - 3 = 3')
@@ -72,7 +72,7 @@ If you pick the wrong one, it can seriously slow down a computer's performance.
 Python has the following data types: integers, booleans, floating point numbers, complex numbers and strings
 So, it's better to use integer variables from the start, which are more efficient for handling numbers. The main takeaway is that selecting the appropriate data type is crucial for a program to run efficiently.
 
-#Integers
+# Integers
 A company called BIG VEGGIE sells fresh food to smaller stores. BIG VEGGIE buys their stock in bulk. 
 BIG VEGGIE has asked you to develop a system to calculate the amount small stores will have to pay. All stock items have a fixed price:
 Asparagus – R30.54 per kg
@@ -82,7 +82,7 @@ Garlic – R35.81 per kg
 Potatoes – R2.04 per kg
 A store must buy more than 100 kg of broccoli in order to get a 20% discount. They must also buy more than 300 kg of potatoes in order to get a 30% discount. BIG VEGGIE has asked you to develop a program that will only ask them to input the weight for each product the store buys from them. The program must determine the total amount due. Presume you have to take more than 100 kg of broccoli, and more than 300 kg of potatoes. The rest of the products have a fixed price, independent of how much you buy. 
 
-#CODE FOR BIG VEGGIE system
+# CODE FOR BIG VEGGIE system
 # price of veg per kg
 asparagus = 30.54
 beetroot = 1.45
@@ -236,7 +236,7 @@ You'd typically opt for the verbose flag when crafting a lengthy and intricate r
 The regex would interpret the expression as a standard one without any comments or spaces.
 
 
-#Week 3 (Defining functions)
+# Week 3 (Defining functions)
 
 #Lists can be created in a number of ways:
 f = [] # An empty list
@@ -246,7 +246,7 @@ fruits.append(['kiwi', 'pear'])
 ['apple', 'banana', 'mango', ['kiwi', 'pear']] #A nested list
 list = ['child', 1, 3.14] # A list with mixed data types
 
-#Regular Expressions
+# Regular Expressions
 
 Activity 1:
 Write a program that removes all numbers (except 5) that appear in a string. The string = JGDN8923487854t6fnjhasfu555335udvb
